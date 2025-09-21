@@ -20,7 +20,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Spectral</a></h1>
+						<h1><a href="index.html">Riley Watson</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -156,10 +156,9 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Riley Watson</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; <span id="year"></span> Riley Watson</li>
 						</ul>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -170,6 +169,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+  			// Insert current year in footer
+  				document.addEventListener("DOMContentLoaded", () => {
+    			const y = document.getElementById("year");
+    			if (y) y.textContent = new Date().getFullYear();
+  			});
+		</script>
 	</body>
 </html>
