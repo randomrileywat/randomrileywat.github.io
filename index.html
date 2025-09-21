@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark">
+    <title>My Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <h1>My Awesome Website</h1>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <section id="home" class="card">
+        <h2>Welcome 👋</h2>
+        <p>This is your starter template. Edit <code>index.html</code> and <code>styles.css</code> to customize.</p>
+        <button id="cta">Click me</button>
+      </section>
+
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p>Write a short blurb about what this site is for. Keep it simple!</p>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label>
+            Your email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Say hi…" required></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        <p class="note">This is a demo form — wire it up later with a service like Netlify Forms or Formspree.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Riley Watson</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
